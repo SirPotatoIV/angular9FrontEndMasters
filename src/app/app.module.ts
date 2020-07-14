@@ -11,21 +11,23 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // add by me, not by Angular CLI
 import { ItemsComponent } from './items/items.component';
 import { MaterialModule } from './material.module';
+import { FirstComponentComponent } from './first-component/first-component.component';
 
 // This is our top level, main Angular module.
 @NgModule({
   declarations: [
     AppComponent,
-    ItemsComponent
+    ItemsComponent,
+    FirstComponentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
     MaterialModule
   ],
   providers: [],
-  // sets up where to start to build the site
+  // sets up where to start to build (compile) the site
   bootstrap: [AppComponent]
 })
 export class AppModule { }
