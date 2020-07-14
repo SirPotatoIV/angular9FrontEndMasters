@@ -7,7 +7,10 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+// add by me, not by Angular CLI
 import { ItemsComponent } from './items/items.component';
+import { MaterialModule } from './material.module';
 
 // This is our top level, main Angular module.
 @NgModule({
@@ -19,6 +22,7 @@ import { ItemsComponent } from './items/items.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule
+    MaterialModule
   ],
   providers: [],
   // sets up where to start to build the site
