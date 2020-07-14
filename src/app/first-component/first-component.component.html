@@ -1,13 +1,21 @@
-<p>first-component works!</p>
-<p>My name is {{name}}</p>
-
+<h1>Fun with Bindings</h1>
 <form class="example-form">
     <mat-form-field class="example-full-width">
         <mat-label>Favorite color</mat-label>
         <input matInput [(ngModel)]="themeColor" placeholder="Ex. Red" name="themeColor" type="text">
-        <button mat-button (click)="updateColor()">Change the Color</button>
     </mat-form-field>
+    <button mat-button (click)="updateColor()">Click for Salmon</button>
 </form>
 <mat-card>
     <p [style.color]="themeColor">Change this font color.</p>
 </mat-card>
+
+<hr>
+
+<h1>Fun with Directives</h1>
+<h2>List of Superheroes</h2>
+<mat-list>
+    <mat-list-item *ngFor="let hero of superheroes">
+        <h3>{{hero}}</h3>
+    </mat-list-item>
+</mat-list>

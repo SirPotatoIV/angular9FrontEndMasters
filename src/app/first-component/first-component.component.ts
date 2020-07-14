@@ -8,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class FirstComponentComponent implements OnInit {
 
   name = "jake";
+
   themeColor = "red";
+
+  superheroes = ["Captain Marvel", "Storm", "Spiderman"]
+
   updateColor = function(){
     console.log("updated color!!")
     this.themeColor = 'salmon';
