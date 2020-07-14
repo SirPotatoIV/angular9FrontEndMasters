@@ -12,19 +12,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ItemsComponent } from './items/items.component';
 import { MaterialModule } from './material.module';
 import { FirstComponentComponent } from './first-component/first-component.component';
+import { FormsModule } from '@angular/forms';
 
 // This is our top level, main Angular module.
 @NgModule({
   declarations: [
     AppComponent,
     ItemsComponent,
-    FirstComponentComponent
+    FirstComponentComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
   ],
   providers: [],
   // sets up where to start to build (compile) the site

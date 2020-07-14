@@ -1,2 +1,12 @@
 <p>first-component works!</p>
 <p>My name is {{name}}</p>
+
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+        <mat-label>Favorite color</mat-label>
+        <input matInput [(ngModel)]="themeColor" placeholder="Ex. Red" name="themeColor" type="text">
+    </mat-form-field>
+</form>
+<mat-card>
+    <p [style.color]="themeColor">Change this font color.</p>
+</mat-card>

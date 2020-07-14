@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FirstComponentComponent implements OnInit {
 
-  constructor() {}
-
   name = "jake";
+  themeColor = "red";
+
+  constructor() {}
 
   ngOnInit(): void {
   }
